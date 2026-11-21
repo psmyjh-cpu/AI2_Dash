@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 의료기기 시장 인사이트 | 2024–2028</title>
+<style>
+:root{--ink:#00434e;--brand:#007f94;--line:#d9e6e9;--muted:#526970;--bg:#effbfe}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);background:#f4f8fa;font:16px/1.65 system-ui,'Noto Sans KR','Malgun Gothic',sans-serif;word-break:keep-all}
+a{color:var(--brand);text-underline-offset:4px}
+button,select,input,textarea{font:inherit}
+button,select,input{min-height:44px;border:1px solid #9bb2b9;border-radius:8px;background:white;color:var(--ink);padding:8px 12px}
+button{cursor:pointer}
+button:hover{background:var(--bg)}
+:focus-visible{outline:3px solid #a34200;outline-offset:3px}
+h1,h2,h3,p{margin:0}
+h1{font-size:clamp(26px,3vw,38px);line-height:1.35;letter-spacing:-1px}
+h2{font-size:23px}
+h3{font-size:18px}
+small,.note{font-size:13px;color:var(--muted)}
+.skip{position:absolute;top:-80px}
+.skip:focus{top:8px;background:white;padding:12px;z-index:9}
+header{background:white;border-bottom:1px solid var(--line)}
+.top,.wrap{max-width:1440px;margin:auto;padding:22px 32px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.logo{font-size:21px;font-weight:800;display:flex;align-items:center;gap:10px}
+.mark{background:#005866;color:white;border-radius:10px;width:40px;height:40px;display:grid;place-items:center}
+.mark svg{width:28px;height:28px}
+nav{background:white;border-bottom:1px solid var(--line);overflow:auto}
+nav .wrap{display:flex;gap:24px;padding-top:12px;padding-bottom:12px;white-space:nowrap}
+nav a{color:#34565d;text-decoration:none;font-weight:650}
+.intro{padding:28px 0 24px}
+.eyebrow{font-size:12px;letter-spacing:2px;color:var(--brand);font-weight:800;margin-bottom:8px}
+.intro p{color:var(--muted);margin-top:12px}
+.badge{display:inline-block;background:#e3f3f6;color:#005866;border-radius:5px;padding:3px 8px;font-size:12px}
+.grid{display:grid;gap:18px}
+.kpis{grid-template-columns:repeat(5,minmax(0,1fr))}
+.card{background:white;border:1px solid var(--line);border-radius:12px;padding:22px;min-width:0}
+.kpi{border-top:3px solid #00a0ba;text-decoration:none;color:var(--ink)}
+.kpi b{display:block;font-size:30px;line-height:1.3;margin:14px 0 8px;letter-spacing:-1px;font-variant-numeric:tabular-nums}
+.kpi small{display:block}
+.kpi:hover{border-color:var(--brand);background:#f9feff}
+section{scroll-margin-top:20px;margin:30px 0}
+.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.sectionhead span{color:var(--brand);font-size:13px}
+.two{grid-template-columns:1.55fr 1fr}
+.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.filters{display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin-bottom:18px}
+.filters label{display:grid;gap:5px;font-size:13px;flex:1;min-width:140px}
+.filters input,.filters select{width:100%}
+.alert{background:#e9f4f7;border-left:4px solid #007f94;padding:13px 16px;font-size:14px;margin-top:16px}
+.chart{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;margin:12px 0}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.barrow{margin:15px 0}
+.barlabel{display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.track{height:9px;background:#edf3f5;border-radius:8px;margin:6px 0}
+.fill{height:100%;background:#00869c;border-radius:8px}
+.tablewrap{overflow:auto;max-width:100%;margin-top:16px}
+table{border-collapse:collapse;width:100%;font-size:14px;text-align:left}
+caption{text-align:left;font-weight:650;padding-bottom:10px}
+th,td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top;min-width:100px}
+th{background:#eff6f8;color:#34565d}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+summary{cursor:pointer;font-weight:650;padding:10px 0}
+details{margin-top:12px}
+.products{grid-template-columns:repeat(5,minmax(0,1fr))}
+.product{padding:16px}
+.product strong{display:block;margin:10px 0}
+.product .badge{font-size:11px}
+.product a{font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;counter-reset:step;list-style:none;padding:0}
+.steps li{padding:16px;border:1px solid var(--line);border-radius:8px;background:#f6fbfc}
+.steps li:before{counter-increment:step;content:counter(step,decimal-leading-zero);display:block;font-weight:800;color:var(--brand)}
+.source-list{padding-left:22px;overflow-wrap:anywhere;word-break:normal}
+.source-list li{margin:8px 0}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:13px}
+textarea{width:100%;height:300px;white-space:pre;word-break:normal;border:1px solid #9bb2b9}
+.empty{padding:30px;text-align:center;color:var(--muted)}
+@media(max-width:1100px){
+  .kpis{grid-template-columns:repeat(3,1fr)}
+  .products{grid-template-columns:repeat(3,1fr)}
+  .two{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+  .top,.wrap{padding:16px}
+  .top{align-items:flex-start}
+  .top small{display:none}
+  .kpis,.three,.products,.steps{grid-template-columns:1fr}
+  .kpi b{font-size:32px}
+  .card{padding:18px}
+  .sectionhead{align-items:flex-start}
+  .filters label{min-width:45%}
+  nav .wrap{gap:20px}
+  .intro{padding-top:18px}
+}
+@media print{
+  button,.filters,nav,#codebox{display:none}
+  body{background:white}
+  .card{break-inside:avoid}
+  section{break-inside:auto}
+}
+</style>
+
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header>
+  <div class="top">
+    <div class="logo">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" aria-hidden="true">
+          <path d="M2 12h5l3-7 4 14 3-7h5"/>
+        </svg>
+      </span>
+      HealthTech Insight
+    </div>
+    <small>대한민국 · 글로벌 / 자료 기준 2026.11</small>
+    <button onclick="window.print()">인쇄 / PDF</button>
+  </div>
+</header>
+
+<nav aria-label="주요 메뉴">
+  <div class="wrap">
+    <a href="#main">종합 현황</a>
+    <a href="#global">글로벌 시장</a>
+    <a href="#korea">국내 시장</a>
+    <a href="#products">제품·기업</a>
+    <a href="#policy">규제·수가</a>
+    <a href="#strategy">활용·전략</a>
+    <a href="#sources">데이터·출처</a>
+  </div>
+</nav>
+
+<main id="main" class="wrap">
+  <div class="intro">
+    <div class="eyebrow">AI MEDICAL DEVICE MARKET / 2024–2028</div>
+    <h1>AI 기반 휴대용·연동형<br>건강관리 의료기기 시장 대시보드</h1>
+    <p>시장 성장에서 임상 현장까지, 데이터로 읽는 디지털헬스케어의 흐름</p>
+  </div>
+
+  <div class="grid kpis" id="kpis"></div>
+  <p class="note" style="margin-top:12px">
+    종합 KPI는 원자료의 기준연도 고정값입니다.
+    아래 필터는 글로벌 시장 분석과 해당 데이터 표에 적용됩니다.
+  </p>
+
+  <section id="global">
+    <div class="sectionhead">
+      <h2>01 글로벌 시장 전망</h2>
+      <span>성장 규모와 속도</span>
+    </div>
+
+    <div class="card">
+      <div class="filters">
+        <label>조회 종료연도
+          <select id="year">
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option selected>2028</option>
+          </select>
+        </label>
+        <label>시장 세그먼트
+          <select id="segment"><option value="">전체</option></select>
+        </label>
+        <label>조사기관
+          <select id="agency"><option value="">전체</option></select>
+        </label>
+        <label>수치 유형
+          <select id="kind">
+            <option value="">전체</option>
+            <option value="base">기준값·시장 추정</option>
+            <option value="calc">CAGR 계산 전망</option>
+            <option value="pub">조사기관 공표 전망</option>
+          </select>
+        </label>
+        <button id="reset">초기화</button>
+      </div>
+
+      <div class="grid two">
+        <div>
+          <h3>2024–2028 시장 규모 추이</h3>
+          <p class="note">단위: 십억 USD · 전체 선택 시 주요 3개 시장 표시</p>
+          <div id="line"></div>
+          <div id="legend" class="legend"></div>
+          <p class="note">실선: 기준값·추정 / 점선: 전망 / 빈 연도: 원문 미기재</p>
+        </div>
+        <div>
+          <h3>세그먼트별 CAGR</h3>
+          <p class="note">단위: % · 적용 기간은 항목별로 다름</p>
+          <div id="growth"></div>
+        </div>
+      </div>
+
+      <div class="alert">
+        시장 정의가 겹치므로 합산하지 않습니다.
+        RPM 시스템(GVR)과 기기·서비스(FBI)는 서비스 포함 범위가 달라
+        동일 시장의 차이로 해석할 수 없습니다.
+      </div>
+
+      <details open>
+        <summary>
+          선택한 시장 데이터 표
+          <span id="count" aria-live="polite"></span>
+        </summary>
+        <button id="copydata">표 복사</button>
+        <button id="csv">CSV 다운로드</button>
+        <div class="tablewrap" id="markettable"></div>
+      </details>
+    </div>
+  </section>
+
+  <section id="korea">
+    <div class="sectionhead">
+      <h2>02 국내 산업의 위치</h2>
+      <span>2024 실적 · 2025 조사</span>
+    </div>
+
+    <div class="grid three">
+      <article class="card">
+        <span class="badge">2024 · 생산 실적</span>
+        <h3>디지털의료기기 생산</h3>
+        <p style="font-size:30px;font-weight:800">5,472억 원</p>
+        <p class="note">식약처 실적 · 보고서 참고문헌 11</p>
+      </article>
+      <article class="card">
+        <span class="badge">2024 · 수출 실적</span>
+        <h3>디지털의료기기 수출</h3>
+        <p style="font-size:30px;font-weight:800">3.34억 달러</p>
+        <p class="note">식약처 실적 · 보고서 참고문헌 11</p>
+      </article>
+      <article class="card">
+        <span class="badge">2025 · 조사 대상</span>
+        <h3>응답 기업</h3>
+        <p style="font-size:30px;font-weight:800">274 / 382개사</p>
+        <p class="note">식약처 시장현황 조사 · 참고문헌 2</p>
+      </article>
+    </div>
+
+    <div class="grid three" style="margin-top:18px" id="domestic"></div>
+    <p class="note">
+      질환군과 수출지역은 복수응답 비율이며 시장점유율이 아닙니다.
+      주 서비스 분야는 주요 항목만 제시합니다.
+    </p>
+  </section>
+
+  <section id="products">
+    <div class="sectionhead">
+      <h2>03 핵심 제품과 기업</h2>
+      <span>5개 제품군</span>
+    </div>
+    <div id="productcards" class="grid products"></div>
+
+    <div class="card" style="margin-top:18px">
+      <label for="companyfilter">기업·제품 검색</label>
+      <input id="companyfilter" type="search" placeholder="기업명 또는 제품명">
+      <div id="companies" class="tablewrap"></div>
+      <p class="note">
+        보고서 3절 기준. 기업별 통화·기간·사업 범위가 달라 매출 순위를 만들지 않았습니다.
+        워치의 웰니스 기능과 인허가된 의료 기능은 구분해야 합니다.
+      </p>
+    </div>
+  </section>
+
+  <section id="policy">
+    <div class="sectionhead">
+      <h2>04 인허가 및 보험 수가</h2>
+      <span>제도적 조건</span>
+    </div>
+
+    <div class="grid two">
+      <article class="card">
+        <span class="badge">대한민국</span>
+        <h3>병원 중심 모니터링</h3>
+        <p>디지털의료제품법 → AI 변경관리계획 → 병동 감시와 연동</p>
+        <p class="note">
+          보고서 4절: 2025년 법 시행 및 EX871 원격 심박 감시 소개.
+          EX871 금액은 원문 미기재.
+        </p>
+      </article>
+      <article class="card">
+        <span class="badge">미국</span>
+        <h3>FDA · PCCP · RPM</h3>
+        <p>
+          인허가와 사전변경관리계획을 바탕으로 지속적인 모델 개선 및
+          원격 모니터링 운영
+        </p>
+        <p class="note">보고서 4절의 제도 설명을 요약한 자료입니다.</p>
+      </article>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>미국 RPM 수가 — 제공 자료의 2026년 추정치</h3>
+      <div class="tablewrap">
+        <table>
+          <caption>
+            비시설 전국 평균 추정액 · USD · 보고서 4절 /
+            참고문헌 15–17, 113–116
+          </caption>
+          <thead>
+            <tr><th>코드</th><th>금액</th><th>원문에 제시된 청구 요건</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>99453</td><td>21.71</td>
+              <td>초기 설정·교육 / 에피소드당 1회 / 최소 2일 전송</td>
+            </tr>
+            <tr>
+              <td>99445</td><td>52.10–52.11</td>
+              <td>30일 내 2–15일 전송 / 99454와 월 1회 택일</td>
+            </tr>
+            <tr>
+              <td>99454</td><td>52.10–52.11</td>
+              <td>30일 내 16–30일 전송 / 99445와 월 1회 택일</td>
+            </tr>
+            <tr>
+              <td>99470</td><td>26.05</td>
+              <td>월 10–19분 관리 / 99457과 택일</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        공식 최신 청구 지침을 재검증한 표가 아닙니다.
+        원자료에는 기기 공급 수가의 대체 출처 값 47.43 USD도 있어
+        적용 기준 확인이 필요합니다.
+        국가·지역·지급자·청구 조건에 따라 달라질 수 있습니다.
+      </p>
+    </div>
+  </section>
+
+  <section id="strategy">
+    <div class="sectionhead">
+      <h2>05 의료현장 적용과 미래 전략</h2>
+      <span>2027–2028</span>
+    </div>
+
+    <div class="card">
+      <h3>생체신호에서 의료진 검토까지</h3>
+      <ol class="steps">
+        <li>센서로 생체신호 측정</li>
+        <li>기기 또는 서버에서 AI 분석</li>
+        <li>데이터 전송·클라우드 저장</li>
+        <li>병원 EHR 연동</li>
+        <li>의료진 검토</li>
+        <li>임상 판단에 따른 조치</li>
+      </ol>
+      <p class="note">
+        개념적 흐름이며 모든 제품이 온디바이스 AI나
+        EHR 직접 연동을 지원하는 것은 아닙니다.
+      </p>
+      <div class="alert">
+        도입 과제: 경보 피로 · 센서 오류 · 개인정보 및 보안 ·
+        EHR 연동 비용 · 보험 수가 적용 범위
+      </div>
+    </div>
+
+    <div class="grid three" style="margin-top:18px">
+      <article class="card">
+        <h3>단기 모니터링</h3>
+        <p>퇴원 후 환자군에 맞는 기기·서비스 패키지 설계</p>
+      </article>
+      <article class="card">
+        <h3>연동과 반복 매출</h3>
+        <p>병원 EHR 워크플로와 소프트웨어 구독 모델 결합</p>
+      </article>
+      <article class="card">
+        <h3>근거 기반 해외 확장</h3>
+        <p>AI 변경관리·보안 강화와 국내 임상 근거 축적</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="sectionhead">
+      <h2>06 데이터 및 출처</h2>
+      <span>원문과 계산의 구분</span>
+    </div>
+    <div class="card">
+      <h3>데이터 읽는 방법</h3>
+      <ul>
+        <li>
+          기본 자료: quantitative_data_charts_reviewed.xlsx의 정량 데이터 시트,
+          시장조사 보고서의 1–6절.
+        </li>
+        <li>
+          이 페이지는 주요 지표를 선별한 정적 스냅샷입니다.
+          원본 Excel과 실시간 연결되지 않습니다.
+        </li>
+        <li>
+          CAGR 계산 전망 = 기준값 × (1 + CAGR)<sup>경과연수</sup>.
+          조사기관 공표 전망과 구분합니다.
+        </li>
+        <li>
+          스마트 의료기기 2028년: 원문 144.93,
+          표시 기준값 재계산 144.92 십억 USD.
+          그래프는 원문을 유지합니다.
+        </li>
+        <li>
+          시장·기업·규제 수치는 제공 자료를 시각화했으며
+          최신 사실 여부를 별도로 확인한 것은 아닙니다.
+        </li>
+        <li>
+          보고서 참고문헌 6은 unknown_url로 원문 확인이 불가능합니다.
+          해당 참조가 붙은 수치는 추가 확인이 필요합니다.
+        </li>
+      </ul>
+
+      <details>
+        <summary>원문 참고 링크 및 디자인 기준</summary>
+        <ol class="source-list" id="links"></ol>
+      </details>
+
+      <details id="codebox">
+        <summary>이 페이지 전체 HTML 코드 보기·복사</summary>
+        <button id="copycode">전체 코드 복사</button>
+        <textarea id="sourcecode" readonly
+                  aria-label="전체 HTML 코드" spellcheck="false"></textarea>
+      </details>
+      <p id="status" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <footer>
+    HealthTech Insight · 2024–2028 시장 분석 · 자료 기준 2026년 11월<br>
+    민간 분석 대시보드입니다.
+    KRDS의 정보 위계·레이블·키보드 접근성 원칙을 참고했으며
+    정부 공식 서비스가 아닙니다.
+  </footer>
+</main>
+
+<script>
+'use strict';
+
+const originalHTML='<!doctype html>\n'+document.documentElement.outerHTML;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({
+  '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+}[c]));
+
+// 값 순서: 2024, 2025, 2026, 2027, 2028. null은 원문 미기재.
+const markets=[
+  ['스마트 의료기기','GVR',12.8,'2025–2030',
+    [90.5,null,113.9,128.48,144.93]],
+  ['웨어러블 의료기기','GVR',15,'2026–2033',
+    [null,60.8,68.8,79.12,90.99]],
+  ['RPM 시스템','GVR',20,'2026–2033',
+    [null,26,30.9,37.08,44.5]],
+  ['RPM 기기·서비스','FBI',19.16,'2026–2034',
+    [null,59.92,71.29,84.95,101.23]],
+  ['RPM 소프트웨어','Mordor',32.35,'2026–2031',
+    [null,null,20.73,27.44,36.31]],
+  ['패치형 ECG 모니터','DIR',14.2,'2026–2034',
+    [null,1.56,1.782,2.03,2.323]],
+  ['수면무호흡 진단 웨어러블','FMI',11.6,'2026–2036',
+    [null,1.29,1.4341,1.6,1.7861]],
+  ['휴대용 초음파','FBI',12.27,'2026–2034',
+    [null,0.3973,0.44828,0.5033,0.565]],
+  ['AI 디지털 청진기','FMI',9.4,'2026–2036',
+    [null,0.1899,0.2078,0.2273,0.2487]]
+];
+
+const agencies={
+  GVR:'Grand View Research',
+  FBI:'Fortune Business Insights',
+  Mordor:'Mordor Intelligence',
+  DIR:'Data Insights Reports',
+  FMI:'Future Market Insights'
+};
+const colors=['#007f94','#456ad4','#aa5800','#7957a1','#387343'];
+
+const links=[
+  ['스마트 의료기기 / GVR',
+   'https://www.grandviewresearch.com/industry-analysis/smart-medical-devices-market'],
+  ['웨어러블 / GVR',
+   'https://www.grandviewresearch.com/industry-analysis/wearable-medical-devices-market'],
+  ['RPM 시스템 / GVR',
+   'https://www.grandviewresearch.com/industry-analysis/remote-patient-monitoring-devices-market'],
+  ['RPM 소프트웨어 / Mordor',
+   'https://www.mordorintelligence.com/industry-reports/remote-patient-monitoring-software-market'],
+  ['국내 디지털의료기기 조사 / 식약처',
+   'https://www.korea.kr/common/docViewer.do?fileId=198488172&tblKey=GMN'],
+  ['국내 의료기기 시장 / KHIDI',
+   'https://www.khidi.or.kr/menu?menuId=MENU03194'],
+  ['디지털의료기기 생산·수출 / ZDNet',
+   'https://zdnet.co.kr/view/?no=20250528140233'],
+  ['FDA AI 의료기기 목록',
+   'https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices'],
+  ['RPM 수가 해설 / 제공 보고서 참고문헌 17',
+   'https://www.healthrecoverysolutions.com/blog/2026-rpm-and-ccm-reimbursement-codes-and-payment-updates'],
+  ['KRDS 헤더·탐색 구조',
+   'https://www.krds.go.kr/html/site/component/component_02_03.html'],
+  ['KRDS 아이콘과 접근성',
+   'https://www.krds.go.kr/html/site/component/component_08_01.html'],
+  ['RPM 기기·서비스 / FBI',
+   'https://www.fortunebusinessinsights.com/remote-patient-monitoring-devices-market-106328'],
+  ['패치형 ECG / DIR',
+   'https://www.datainsightsreports.com/reports/global-ecg-monitor-with-patch-market-174995'],
+  ['수면무호흡 진단 웨어러블 / FMI',
+   'https://www.futuremarketinsights.com/reports/home-sleep-apnea-diagnostic-wearables-market'],
+  ['휴대용 초음파 / FBI',
+   'https://www.fortunebusinessinsights.com/industry-reports/handheld-ultrasound-market-100702'],
+  ['AI 디지털 청진기 / FMI',
+   'https://www.futuremarketinsights.com/reports/ai-enabled-digital-stethoscope-market']
+];
+
+const kpis=[
+  ['글로벌 스마트 의료기기','1,139억 달러',
+   '2026 · GVR · 추정','global'],
+  ['글로벌 웨어러블 의료기기','688억 달러',
+   '2026 · GVR · 추정','global'],
+  ['글로벌 RPM 시스템','309억 달러',
+   '2026 · GVR · 추정','global'],
+  ['국내 전체 의료기기','11조 8,769억 원',
+   '2025 · 식약처·KHIDI · 실적','korea'],
+  ['RPM 소프트웨어 CAGR','32.35%',
+   '2026–2031 · Mordor · 전망','global']
+];
+
+$('#kpis').innerHTML=kpis.map(x=>`
+  <a class="card kpi" href="#${x[3]}">
+    <h3>${x[0]}</h3><b>${x[1]}</b>
+    <small>${x[2]}</small><small>상세 분석 →</small>
+  </a>
+`).join('');
+
+markets.forEach(m=>$('#segment').add(new Option(m[0],m[0])));
+Object.entries(agencies).forEach(([k,v])=>
+  $('#agency').add(new Option(v,k))
+);
+
+function bars(rows,max=100){
+  return rows.map(([name,value,note],i)=>`
+    <div class="barrow">
+      <div class="barlabel">
+        <span>${esc(name)}</span><b>${value}%</b>
+      </div>
+      <div class="track">
+        <div class="fill"
+             style="width:${value/max*100}%;background:${colors[i%colors.length]}">
+        </div>
+      </div>
+      <small>${esc(note||'')}</small>
+    </div>
+  `).join('');
+}
+
+const domestic=[
+  ['서비스 분야',[
+    ['진단보조',35.8],['검사',26.6],
+    ['정보제공·관리',15.3],['치료',12.4]
+  ]],
+  ['질환군 · 복수응답',[
+    ['심혈관 질환',42.3],['재활',37.2],
+    ['암 질환',29.6],['정신건강',23.4],['당뇨병',19.3]
+  ]],
+  ['수출지역 · 복수응답',[
+    ['동남아시아',64.4],['북아메리카',37.3],
+    ['중앙·서아시아',32.2],['북·서유럽',32.2]
+  ]]
+];
+
+$('#domestic').innerHTML=domestic.map(([name,rows])=>`
+  <article class="card">
+    <h3>${name}</h3>${bars(rows)}
+    <p class="note">2025년 조사 · % · 식약처 / 보고서 2절</p>
+  </article>
+`).join('');
+
+const companies=[
+  ['CGM','Dexcom · 미국','G7 15 Day / Stelo',
+   '연속혈당 모니터링','2025 · 46.6억 USD'],
+  ['CGM','Abbott · 미국','FreeStyle Libre',
+   '연속혈당 모니터링','이 화면 매출 미수록'],
+  ['ECG·RPM','iRhythm · 미국','Zio',
+   '패치형 심전도 분석','2025 · 7.471억 USD'],
+  ['ECG·RPM','씨어스테크놀로지 · 한국','thynC / mobiCARE',
+   '병동 감시·심전도','2026 상반기 · 609억 원'],
+  ['ECG·RPM','메쥬 · 한국','HiCardi',
+   '원격 모니터링','2026 상반기 · 약 95.8억 원'],
+  ['혈압','스카이랩스 · 한국','CART BP pro',
+   '반지형 혈압 측정','2026 상반기 · 약 50억 원'],
+  ['ECG·RPM','휴이노 · 한국','MEMO Patch M',
+   '웨어러블 심전도','원문 매출 미공개'],
+  ['수면','Apple · 미국 / 삼성전자 · 한국',
+   'Apple Watch / Galaxy Watch·Ring',
+   '소비자 웨어러블·일부 의료 기능','의료 매출 미분리'],
+  ['초음파·청진기','Butterfly Network · 미국','Butterfly iQ3',
+   '현장 초음파','2026 3분기 · 3,260만 USD'],
+  ['초음파·청진기','Eko Health · 미국','CORE 500 / SENSORA',
+   '청진·AI 분석','원문 매출 미공개']
+];
+
+$('#productcards').innerHTML=[
+  ['CGM','연속혈당측정기','Dexcom · Abbott'],
+  ['ECG·RPM','웨어러블 ECG·RPM','iRhythm · 씨어스 · 메쥬'],
+  ['혈압','무커프 혈압계','스카이랩스'],
+  ['수면','수면 모니터링','Apple · 삼성전자'],
+  ['초음파·청진기','초음파·AI 청진기','Butterfly · Eko']
+].map(([key,title,desc],i)=>`
+  <article class="card product">
+    <span class="badge">PRODUCT 0${i+1}</span>
+    <strong>${title}</strong>
+    <p class="note">${desc}</p>
+    <button data-product="${key}">기업 보기 →</button>
+  </article>
+`).join('');
+
+function table(head,rows,caption){
+  return `
+    <table>
+      <caption>${esc(caption)}</caption>
+      <thead>
+        <tr>${head.map(x=>`<th scope="col">${esc(x)}</th>`).join('')}</tr>
+      </thead>
+      <tbody>
+        ${rows.length
+          ?rows.map(r=>`
+            <tr>${r.map(x=>`<td>${esc(x)}</td>`).join('')}</tr>
+          `).join('')
+          :`<tr><td colspan="${head.length}" class="empty">
+             조건에 해당하는 자료가 없습니다.
+           </td></tr>`
+        }
+      </tbody>
+    </table>
+  `;
+}
+
+function renderCompanies(){
+  let q=$('#companyfilter').value.toLowerCase();
+  $('#companies').innerHTML=table(
+    ['제품군','기업·국가','대표 제품','활용','매출·기간'],
+    companies.filter(r=>r.join(' ').toLowerCase().includes(q)),
+    '기업 비교 · 원자료 기준 · 매출 순위 아님'
+  );
+}
+
+$('#companyfilter').oninput=renderCompanies;
+document.querySelectorAll('[data-product]').forEach(b=>{
+  b.onclick=()=>{
+    $('#companyfilter').value=b.dataset.product;
+    renderCompanies();
+    $('#companyfilter').scrollIntoView({block:'center'});
+    $('#companyfilter').focus();
+  };
+});
+renderCompanies();
+
+let currentRows=[];
+const head=['시장','조사기관','연도','규모(십억 USD)','수치 유형'];
+const types={
+  base:'기준값·시장 추정',
+  calc:'CAGR 계산 전망',
+  pub:'조사기관 공표 전망'
+};
+
+function type(m,i){
+  return i<3?'base':m[1]==='DIR'?'pub':'calc';
+}
+
+function render(){
+  const end=+$('#year').value;
+  const kind=$('#kind').value;
+  const seg=$('#segment').value;
+  const agency=$('#agency').value;
+
+  const selected=markets.filter(m=>
+    (!seg||m[0]===seg)&&(!agency||m[1]===agency)
+  );
+
+  currentRows=[];
+  selected.forEach(m=>{
+    m[4].forEach((v,i)=>{
+      if(i+2024<=end&&(!kind||type(m,i)===kind)){
+        currentRows.push([
+          m[0],agencies[m[1]],2024+i,v??'미기재',
+          v==null?'원문 미기재':types[type(m,i)]
+        ]);
+      }
+    });
+  });
+
+  $('#markettable').innerHTML=table(
+    head,currentRows,
+    '글로벌 시장 원문값 · Excel 정량 데이터 / 보고서 1절'
+  );
+  $('#count').textContent=`(${currentRows.length}행)`;
+
+  const plotted=seg||agency?selected:selected.slice(0,3);
+  const values=plotted.flatMap(m=>
+    m[4].filter((v,i)=>
+      v!=null&&i+2024<=end&&(!kind||type(m,i)===kind)
+    )
+  );
+  const max=Math.max(1,...values)*1.15;
+  const x=i=>55+i*140;
+  const y=v=>260-v/max*220;
+
+  let svg=`
+    <svg class="chart" viewBox="0 0 660 310" role="img"
+         aria-label="글로벌 시장 규모 선 그래프. 정확한 값은 아래 데이터 표 참조.">
+  `;
+
+  for(let n=0;n<=4;n++){
+    let value=max*n/4;
+    svg+=`
+      <path d="M55 ${y(value)}H620" stroke="#d9e6e9"/>
+      <text x="45" y="${y(value)+4}" text-anchor="end"
+            fill="#526970" font-size="12">${value.toFixed(1)}</text>
+    `;
+  }
+
+  for(let i=0;i<5;i++){
+    svg+=`
+      <text x="${x(i)}" y="290" text-anchor="middle"
+            fill="#526970" font-size="13">${2024+i}</text>
+    `;
+  }
+
+  plotted.forEach((m,n)=>{
+    const color=colors[n%colors.length];
+
+    m[4].forEach((v,i)=>{
+      if(v==null||i+2024>end||(kind&&type(m,i)!==kind))return;
+
+      if(i&&m[4][i-1]!=null&&(!kind||type(m,i-1)===kind)){
+        svg+=`
+          <path d="M${x(i-1)} ${y(m[4][i-1])}L${x(i)} ${y(v)}"
+                stroke="${color}" stroke-width="3" fill="none"
+                ${i>=3?'stroke-dasharray="7 5"':''}/>
+        `;
+      }
+
+      svg+=`
+        <circle cx="${x(i)}" cy="${y(v)}" r="5" fill="${color}">
+          <title>${esc(m[0])} / ${2024+i}: ${v} 십억 USD /
+            ${types[type(m,i)]}</title>
+        </circle>
+      `;
+    });
+  });
+
+  $('#line').innerHTML=values.length
+    ?svg+'</svg>'
+    :'<p class="empty">해당 조건의 수치가 없습니다.</p>';
+
+  $('#legend').innerHTML=plotted.map((m,i)=>`
+    <span>
+      <i class="dot" style="background:${colors[i%colors.length]}"></i>
+      ${m[0]} · ${m[1]}
+    </span>
+  `).join('');
+
+  $('#growth').innerHTML=bars(
+    [...selected].sort((a,b)=>b[2]-a[2]).map(m=>[
+      m[0],m[2],`${m[1]} · ${m[3]}`
+    ]),40
+  )+`
+    <p class="note">
+      CAGR은 선택 세그먼트·기관에만 연동됩니다.
+      종료연도·수치 유형 필터는 규모 추이와 표에 적용됩니다.
+    </p>
+  `;
+}
+
+document.querySelectorAll('#global select').forEach(e=>e.onchange=render);
+$('#reset').onclick=()=>{
+  $('#year').value='2028';
+  ['segment','agency','kind'].forEach(id=>$('#'+id).value='');
+  render();
+};
+render();
+
+async function copy(text){
+  try{
+    await navigator.clipboard.writeText(text);
+    $('#status').textContent='복사했습니다.';
+    alert('복사했습니다.');
+  }catch{
+    const t=document.createElement('textarea');
+    t.value=text;
+    document.body.append(t);
+    t.select();
+    const ok=document.execCommand('copy');
+    t.remove();
+    alert(ok
+      ?'복사했습니다.'
+      :'자동 복사가 제한됩니다. 코드 보기 또는 데이터 표에서 직접 선택해 복사해 주세요.'
+    );
+  }
+}
+
+$('#copydata').onclick=()=>copy(
+  [head,...currentRows].map(r=>r.join('\t')).join('\n')
+);
+
+$('#csv').onclick=()=>{
+  const text='\ufeff'+[head,...currentRows].map(r=>
+    r.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(',')
+  ).join('\r\n');
+
+  const url=URL.createObjectURL(
+    new Blob([text],{type:'text/csv;charset=utf-8'})
+  );
+  const a=document.createElement('a');
+  a.href=url;
+  a.download='market_data.csv';
+  a.click();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+
+$('#links').innerHTML=links.map(([n,url])=>`
+  <li>
+    <a href="${esc(url)}" target="_blank" rel="noopener noreferrer">
+      ${esc(n)} ↗
+    </a>
+  </li>
+`).join('');
+
+// 초기 HTML을 보관하므로 복사본에도 동일한 데이터와 기능이 유지됩니다.
+function source(){return originalHTML}
+$('#codebox').ontoggle=()=>{
+  if($('#codebox').open)$('#sourcecode').value=source();
+};
+$('#copycode').onclick=()=>copy($('#sourcecode').value||source());
+</script>
+</html>
